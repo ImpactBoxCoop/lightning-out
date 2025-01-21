@@ -1,7 +1,3 @@
-<aura:application
-  extends="ltng:outApp"
-  access="global"
-  implements="ltng:allowGuestAccess"
->
+<aura:application extends="ltng:outApp" access="global">
   <aura:dependency resource="c:lightningOutLwc" />
 </aura:application>
