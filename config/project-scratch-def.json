@@ -1,0 +1,19 @@
+{
+  "orgName": "Independent Age",
+  "edition": "Enterprise",
+  "features": ["Communities", "Sites", "MarketingUser"],
+  "settings": {
+    "lightningExperienceSettings": {
+        "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+        "enableS1EncryptedStoragePref2": false
+    },
+    "pathAssistantSettings": {
+        "pathAssistantEnabled": true
+    },
+    "communitiesSettings": {
+        "enableNetworksEnabled": true
+    }
+  }
+}
