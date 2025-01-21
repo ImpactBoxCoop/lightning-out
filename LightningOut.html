@@ -1,3 +1,36 @@
 <html>
-  <h1> hello </h1>  
+  <style>
+    a {
+      color: purple;
+    }
+  </style>
+
+  <script src="https://ruby-business-6049.scratch.my.site.com/lightning/lightning.out.js"></script>
+
+  <div data-lightning-out="true"></div>
+
+  <script>
+    const appName = "c:LightningOutApp";
+    const componentName = "c:lightningOut";
+    const lightningEndpoint = "https://ruby-business-6049.scratch.my.site.com/";
+    const targetElement = document.querySelector("[data-lightning-out]");
+    const componentAttributes = {};
+    const authToken = "";
+
+    $Lightning.use(
+      appName,
+      function () {
+        $Lightning.createComponent(
+          componentName,
+          componentAttributes,
+          targetElement,
+          function (cmp) {
+            console.log("lightning component created");
+          }
+        );
+      },
+      lightningEndpoint,
+      authToken
+    );
+  </script>
 </html>
