@@ -12,7 +12,7 @@
         color: purple;
       }
     </style>
-
+    <div id="lightning-out"></div>
     <script src="https://ruby-business-6049.scratch.my.salesforce.com/lightning/lightning.out.js"></script>
 
     <script>
@@ -20,7 +20,7 @@
       const componentName = "c:lightningOut";
       const lightningEndpoint =
         "https://ruby-business-6049.scratch.my.salesforce.com/";
-      const targetElement = document.querySelector("[data-lightning-out]");
+      const targetElement = "lightning-out"; //document.querySelector("[data-lightning-out]");
       const componentAttributes = {};
       const authToken =
         "00DQ1000004a3bU!AQEAQNf800kdmAwcKfuzPxSlohFq54GdAVF8aQ2TJ_bDSYoWj.sfX.zYF06YdzLlt13o6GIIxrFviQRzAyfOQ3nH20qgEdvX";
