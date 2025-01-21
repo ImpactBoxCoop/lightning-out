@@ -1,39 +1,45 @@
-<html>
-  <h1>Title for html file</h1>
-  <style>
-    a {
-      color: purple;
-    }
-  </style>
+<html lang="en">
+  <head>
+    Access-Control-Allow-Origin: *
 
-  <script src="https://ruby-business-6049.scratch.my.salesforce.com/lightning/lightning.out.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Title for html file</h1>
+    <style>
+      a {
+        color: purple;
+      }
+    </style>
 
-  <div data-lightning-out="true"></div>
+    <script src="https://ruby-business-6049.scratch.my.salesforce.com/lightning/lightning.out.js"></script>
 
-  <script>
-    const appName = "c:LightningOutApp";
-    const componentName = "c:lightningOut";
-    const lightningEndpoint =
-      "https://ruby-business-6049.scratch.my.salesforce.com/";
-    const targetElement = document.querySelector("[data-lightning-out]");
-    const componentAttributes = {};
-    const authToken =
-      "00DQ1000004a3bU!AQEAQNf800kdmAwcKfuzPxSlohFq54GdAVF8aQ2TJ_bDSYoWj.sfX.zYF06YdzLlt13o6GIIxrFviQRzAyfOQ3nH20qgEdvX";
+    <script>
+      const appName = "c:LightningOutApp";
+      const componentName = "c:lightningOut";
+      const lightningEndpoint =
+        "https://ruby-business-6049.scratch.my.salesforce.com/";
+      const targetElement = document.querySelector("[data-lightning-out]");
+      const componentAttributes = {};
+      const authToken =
+        "00DQ1000004a3bU!AQEAQNf800kdmAwcKfuzPxSlohFq54GdAVF8aQ2TJ_bDSYoWj.sfX.zYF06YdzLlt13o6GIIxrFviQRzAyfOQ3nH20qgEdvX";
 
-    $Lightning.use(
-      appName,
-      function () {
-        $Lightning.createComponent(
-          componentName,
-          componentAttributes,
-          targetElement,
-          function (cmp) {
-            console.log("lightning component created");
-          }
-        );
-      },
-      lightningEndpoint,
-      authToken
-    );
-  </script>
+      $Lightning.use(
+        appName,
+        function () {
+          $Lightning.createComponent(
+            componentName,
+            componentAttributes,
+            targetElement,
+            function (cmp) {
+              console.log("lightning component created");
+            }
+          );
+        },
+        lightningEndpoint,
+        authToken
+      );
+    </script>
+  </body>
 </html>
