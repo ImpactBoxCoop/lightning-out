@@ -4,37 +4,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <h1>Title for html file 16</h1>
-    <style>
-      a {
-        color: purple;
-      }
-    </style>
+    <h1>Title for html file 17</h1>
     <div id="lightning-out"></div>
-    <script src="https://ruby-business-6049.scratch.my.site.com/lightning/lightning.out.js"></script>
-
+    <script src="https://ruby-business-6049.scratch.lightning.force.com//lightning/lightning.out.js"></script>
     <script>
-      const appName = "c:LightningOutApp";
-      const componentName = "c:lightningOut";
-      const lightningEndpoint = "ruby-business-6049.scratch.my.site.com";
-      const targetElement = "lightning-out"; //document.querySelector("[data-lightning-out]");
-      const componentAttributes = {};
-      const authToken =
-        "00DQ1000004a3bU!AQEAQG71HhSi8CHeGfo05TFejA9Rv70aQ10XZ4UZ_Egh8Ej.xpJF6Zr2NXv1PDDd4R3JO3wiv6.NnxkUeAS8bm9lP4gTHTf4";
-
       $Lightning.use(
-        "c:LightningOutApp",
+        "c:LightningOutApp", // name of the Lightning Out app
         function () {
+          // callback after the framework and app load
           $Lightning.createComponent(
-            "c:lightningOut",
-            {},
-            "lightning-out",
+            "c:lightningOutLwc", // top-level component of the Lightning Out app
+            {}, // attributes to set on the component
+            "lightning-out", // DOM element ID where the component is inserted
             function (cmp) {
-              console.log("lightning component created");
+              // callback after the component loads
+              console.log("The component was created.");
             }
           );
         },
-        "ruby-business-6049.scratch.my.site.com"
+        "https://ruby-business-6049.scratch.lightning.force.com/", // Experience Cloud site endpoint,
+        "00DQ1000004a3bU!AQEAQG71HhSi8CHeGfo05TFejA9Rv70aQ10XZ4UZ_Egh8Ej.xpJF6Zr2NXv1PDDd4R3JO3wiv6.NnxkUeAS8bm9lP4gTHTf4"
       );
     </script>
   </body>
