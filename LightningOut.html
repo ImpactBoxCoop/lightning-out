@@ -4,10 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <h1>Title for html file 19</h1>
+    <h1>Title for html file 20</h1>
     <div id="lightning-out"></div>
-    <script src="ruby-business-6049.scratch.my.site.com/lightning/lightning.out.js"></script>
+    <script src="https://ruby-business-6049.scratch.my.site.com/lightning/lightning.out.js"></script>
     <script>
+      const appName = "c:LightningOutApp";
+      const componentName = "c:lightningOutLwc";
+      const lightningEndpoint =
+        "https://ruby-business-6049.scratch.my.site.com";
+      const targetElement = document.querySelector("[data-lightning-out]");
+      const componentAttributes = {};
+
       $Lightning.use(
         "c:LightningOutApp", // name of the Lightning Out app
         function () {
